@@ -21,11 +21,8 @@
 		<progress style = "position : absolute; left : 30%; top : 60%;"></progress>
 	</div>
 </div>
-<div>
+<div id = "main_box">
 	<div id = "status">
-	</div>
-
-	<div id = "display">
 	</div>
 
 	<div id = "connected">
@@ -35,13 +32,19 @@
 		</div>
 	</div>
 
+	<div style=" position : absolute; top : 30px; left : 24.5%; border-left : 2px solid #C4C4C4; height : 90%;"></div>
+
+	<div id = "display">
+	</div>
+
 	<div id = "input" contenteditable = "true" onkeypress = "check_rtn(event)">
 	</div>
 
-	<button id = "buttonS" class = "button" onclick = "send_msg()" style = "right : 5%";>Send</button>
+	<div id = "button_wrapper">
+		<button id = "buttonS" class = "button" onclick = "send_msg()">Send</button>
 
-	<button id = "buttonC" class = "button" onclick = "onClose()" style = "right : 0%;">Close</button>
-
+		<button id = "buttonC" class = "button" onclick = "onClose()">Close</button>
+	</div>
 </div>
 
 </body>
