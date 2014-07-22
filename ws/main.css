@@ -168,6 +168,7 @@ html
 
 .button
 {
+	outline : none;
 	min-height : 30px;
 	min-width : 70px;
 	color : white;
