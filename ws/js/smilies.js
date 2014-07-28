@@ -2,9 +2,11 @@ var categories = ["people","nature","objects","places","symbols"];
 var active = 0;
 var smilie_state = false;
 var div = document.getElementById('description');
+var filled=false;
 
 function change_active(x) {
-	active = x;	
+	active = x;
+	filled = false;	
 	div.innerHTML = '';
 	highlight_active();
 	show();
@@ -28,9 +30,7 @@ function append_smilie(smilie_id) {
 	text_box.innerHTML += smilie_code;
 }
 
-function show() {
-	var count=0;
-	highlight_active();
+function fill_smilies() {
 	for(var x=0 ; x < data[categories[active]].length ; x++) {
 		var input = ":" + data[categories[active]][x] + ":";
 		var cont = document.createElement('div');
@@ -40,9 +40,17 @@ function show() {
 		cont.innerHTML = input;
 		div.appendChild(cont);
 		count++;
+		emojify.run();
+		//alert("count = " + count)
 	}
-	emojify.run();
-	//alert("count = " + count)
+	filled = true;
+}
+
+function show() {
+	highlight_active();
+	if(!filled) {
+		fill_smilies();
+	}
 };
 
 function toggle_smilie_state() {
