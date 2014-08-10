@@ -7,10 +7,10 @@ ws.onclose = function(evt) {onClose()};
 function onOpen() {
 	if(ws.readyState == 1)
 	{
+		clear_loading();
 		document.getElementById("status").innerHTML = "Connected";
 		document.getElementById("input").contentEditable = "true";
 		document.getElementById("buttonC").disabled = false;
-		clear_loading();
 	}
 };
 
