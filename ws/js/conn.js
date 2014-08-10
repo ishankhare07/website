@@ -16,6 +16,9 @@ function onConnOpen() {
 
 callback = function get_status() {
 	conn_ws.send('get');
+	if (ws.readyState > 0) {
+		ws.send('ping');
+	}
 }
 
 setInterval(callback,3000);

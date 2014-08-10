@@ -1,4 +1,3 @@
-
 var count = 0;
 
 var ws = new WebSocket("ws://aqueous-bayou-7324.herokuapp.com");
