@@ -2,17 +2,18 @@ var count = 0;
 
 var ws = new WebSocket("ws://aqueous-bayou-7324.herokuapp.com");
 ws.onopen = function() {onOpen()};
+ws.onclose = function(evt) {onClose()};
 
 function onOpen() {
 	if(ws.readyState == 1)
 	{
 		document.getElementById("status").innerHTML = "Connected";
 		document.getElementById("input").contentEditable = "true";
-		document.getElementById("buttonC").disabled = false;			
+		document.getElementById("buttonC").disabled = false;
+		clear_loading();
 	}
 };
 
-ws.onclose = function(evt) {onClose()};
 
 function onClose() {
 	ws.close();

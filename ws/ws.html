@@ -15,7 +15,15 @@
 		var pro = document.getElementById("progress");
 		pro.style.display = 'none';
 	}
-	setTimeout(clear_loading,3000);
+
+	function call_pinger() {
+		if(count == 0) {}
+		else {
+			ws.send('ping');
+		}
+	}
+
+	setInterval(call_pinger,40000);
 
 </script>
 <body>
