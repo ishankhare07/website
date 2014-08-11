@@ -62,8 +62,8 @@ html
 {
 	position : relative;
 	width : 99%;
-	top : 0px;
-	height : 20%;
+	top : -10px;
+	height : 10%;
 	box-shadow : 0px 5px 5px 1px black;
 	background-color : cayan;
 }
