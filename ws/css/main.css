@@ -61,11 +61,11 @@ html
 #header
 {
 	position : relative;
-	width : 100%;
+	width : 110%;
 	top : -10px;
 	height : 10%;
 	box-shadow : 0px 5px 5px 0px black;
-	background-color : cyan;
+	background-color : #5858FA;
 }
 
 #main_box
