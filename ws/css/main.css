@@ -67,9 +67,10 @@ html
 	max-width : 5%;
 	min-width : 5%;
 	padding-top : 10px;
-	padding-left : 5px;
+	padding-left : 10px;
 	max-height : 72%;
 	min-height : 72%;
+	cursor : pointer;
 }
 
 #options:hover
@@ -91,7 +92,7 @@ html
 #header
 {
 	position : relative;
-	width : 103%;
+	width : 101%;
 	top : -10px;
 	left : -10px;
 	height : 5%;
