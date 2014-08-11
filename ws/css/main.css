@@ -58,6 +58,16 @@ html
 	text-shadow : 0px 0px 1px;
 }
 
+#header
+{
+	position : relative;
+	width : 99%;
+	top : 0px;
+	height : 20%;
+	box-shadow : 0px 5px 5px 1px black;
+	background-color : cayan;
+}
+
 #main_box
 {
 	position : relative;
