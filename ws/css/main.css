@@ -74,7 +74,7 @@ html
 
 #options:hover
 {
-	box-shadow : 4px 0px 0px -1px rgba(85, 200, 300, 1) inset;
+	box-shadow : 0px 4px 0px -1px rgba(85, 200, 300, 1) inset;
 }
 
 #status
