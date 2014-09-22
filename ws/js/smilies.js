@@ -80,7 +80,7 @@ function toggle_smilies() {
 emojify.setConfig({
 	emojify_tag_type : 'div',
 	only_crawl_id : null,
-	img_dir : 'emoji/',
+	img_dir : 'img-hangouts-128/',
 	ignored_tags : {
 		'SCRIPT' : 1
 	}
