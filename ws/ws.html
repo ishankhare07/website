@@ -38,8 +38,15 @@
 	<div id = "status" class = "unselectable">
 	</div>
 	
-	<div id = "options" class = "unselectable">
-		Options
+	<div id = "options" class = "unselectable" onclick="emojify.setConfig({
+	emojify_tag_type : 'div',
+	only_crawl_id : null,
+	img_dir : 'emoji/',
+	ignored_tags : {
+		'SCRIPT' : 1
+	}
+});">
+		Chande smilies
 	</div>
 </div>
 
