@@ -1,6 +1,6 @@
 var count = 0;
 
-var ws = new WebSocket("ws://aqueous-bayou-7324.herokuapp.com");
+var ws = new WebSocket("ws://localhost:5000");
 ws.onopen = function() {onOpen()};
 ws.onclose = function(evt) {onClose()};
 

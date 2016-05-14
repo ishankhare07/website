@@ -1,4 +1,4 @@
-conn_ws = new WebSocket("ws://aqueous-bayou-7324.herokuapp.com/connected");
+conn_ws = new WebSocket("ws://localhost:5000/connected");
 conn_ws.onopen = function(){onConnOpen()};
 conn_ws.onmessage = function(message){
 	var persons = "";
